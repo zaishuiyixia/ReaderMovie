@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<view class="container">
+    <view class='user-img'>
+      <image class="avatar" src="/images/avatar/1.png"></image>
+    </view>
+    <text class="motto">Hello, 再睡一夏</text>
+    <view class="journey-container" bindtap="onTap">
+        <text class="journey" bindtap='onTextTap'>开启小程序之旅</text>
+    </view>
+</view>

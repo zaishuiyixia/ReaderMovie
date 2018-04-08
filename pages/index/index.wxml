@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<import src="index-item/index-item-template.wxml" />
+<view class="container">
+  <swiper catchtap="onSwiper" autoplay="true" indicator-dots="true" interval='3000'>
+    <swiper-item><image src="/images/wx.png" data-postId='3'></image></swiper-item>
+    <swiper-item><image src="/images/vr.png" data-postId='4'></image></swiper-item>
+    <swiper-item><image src="/images/iqiyi.png" data-postId='5'></image></swiper-item>
+  </swiper>
+  <block wx:for="{{posts_key}}" wx:for-item="item">
+    <view catchtap='onPostTap' data-postId='{{item.postId}}'>
+      <template is="indexItem" data="{{...item}}"/>
+    </view>
+  </block>
+</view>
+
+

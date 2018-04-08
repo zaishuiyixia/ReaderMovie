@@ -1,0 +1,15 @@
+@import "../movie/movie-template.wxss";
+
+/*scroll-view*/
+.grid-container{
+    height: 1300rpx;
+    margin: 0 auto;
+    margin-top:40rpx;
+    margin-bottom: 6rpx;
+}
+
+.single-view-container{
+    float:left;
+    margin-bottom: 40rpx;
+}
+
